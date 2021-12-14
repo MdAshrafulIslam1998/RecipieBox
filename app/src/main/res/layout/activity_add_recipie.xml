@@ -1,110 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".AddRecipieActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="32dp"
-        android:fontFamily="@font/acme"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:gravity="left"
-        android:textColor="#D32F2F"
-        android:text="Add New Recipie" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
-    <EditText
-        android:id="@+id/recipieName"
-        android:textColor="@color/purple_700"
-        android:textColorHint="#512DA8"
-        android:backgroundTint="#303F9F"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="18dp"
-        android:fontFamily="@font/actor"
-        android:hint="Recipie Name" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/acme"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:gravity="left"
+            android:textColor="#D32F2F"
+            android:text="Add New Recipie" />
 
 
-    <EditText
-        android:id="@+id/recipiesrtDes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="18dp"
-        android:textColorHint="#512DA8"
-        android:backgroundTint="#303F9F"
-        android:fontFamily="@font/actor"
-        android:hint="Short Details" />
+        <EditText
+            android:id="@+id/recipieName"
+            android:textColor="@color/purple_700"
+            android:textColorHint="#512DA8"
+            android:backgroundTint="#303F9F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="18dp"
+            android:fontFamily="@font/actor"
+            android:hint="Recipie Name" />
 
 
-    <EditText
-        android:id="@+id/recipieTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="18dp"
-        android:textColorHint="#512DA8"
-        android:backgroundTint="#303F9F"
-        android:fontFamily="@font/actor"
-        android:hint="Cooking Time" />
-
-    <EditText
-        android:id="@+id/recipieDes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="18dp"
-        android:textColorHint="#512DA8"
-        android:backgroundTint="#303F9F"
-        android:fontFamily="@font/actor"
-        android:hint="Ingrediens" />
-
-    <Button
-        android:id="@+id/idBtnSaveRecipie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:backgroundTint="#D32F2F"
-        android:fontFamily="@font/amaranth"
-        android:paddingLeft="55dp"
-        android:paddingRight="55dp"
-        android:layout_marginTop="150dp"
-        android:text="Save"
-        android:textAllCaps="false" />
+        <EditText
+            android:id="@+id/recipiesrtDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="18dp"
+            android:textColorHint="#512DA8"
+            android:backgroundTint="#303F9F"
+            android:fontFamily="@font/actor"
+            android:hint="Short Details" />
 
 
-    <Button
-        android:id="@+id/reviewBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:backgroundTint="#00796B"
-        android:fontFamily="@font/amaranth"
-        android:paddingLeft="55dp"
-        android:paddingRight="55dp"
-        android:layout_marginTop="10dp"
-        android:text="Review Recipie"
-        android:textAllCaps="false" />
+        <EditText
+            android:id="@+id/recipieTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="18dp"
+            android:textColorHint="#512DA8"
+            android:backgroundTint="#303F9F"
+            android:fontFamily="@font/actor"
+            android:hint="Cooking Time" />
+
+        <EditText
+            android:id="@+id/recipieDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="18dp"
+            android:textColorHint="#512DA8"
+            android:backgroundTint="#303F9F"
+            android:fontFamily="@font/actor"
+            android:hint="Ingrediens" />
+
+        <Button
+            android:id="@+id/idBtnSaveRecipie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#D32F2F"
+            android:fontFamily="@font/amaranth"
+            android:paddingLeft="55dp"
+            android:paddingRight="55dp"
+            android:layout_marginTop="120dp"
+            android:text="Save"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/reviewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#00796B"
+            android:fontFamily="@font/amaranth"
+            android:paddingLeft="55dp"
+            android:paddingRight="55dp"
+            android:layout_marginTop="10dp"
+            android:text="Review Recipie"
+            android:layout_marginBottom="25dp"
+            android:textAllCaps="false" />
+
+
+
+
+    </LinearLayout>
 
 
 
 
 
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+</ScrollView>
